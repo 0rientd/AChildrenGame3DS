@@ -3,12 +3,20 @@
 #include <string.h>
 #include <3ds.h>
 
-int main(int argc, char* argv[])
-{
+#include "brew_bgr.h"
+
+int main(int argc, char* argv[]) {
+
 	gfxInitDefault();
 	consoleInit(GFX_TOP, NULL);
 
 	printf("O toque da sua caneta corresponde a letra -> ");
+
+	gfxSetDoubleBuffering(GFX_BOTTOM, false); //ler essa parte da documentação ;D
+
+	u8* frame_buffer_for_render_image = gfxGetFramebuffer(GFX_BOTTOM, GFX_LEFT, NULL, NULL);
+
+	memcpy(frame_buffer_for_render_image, brew_bgr, brew_bgr_size);
 
 	while (aptMainLoop())
 	{
@@ -48,7 +56,7 @@ int main(int argc, char* argv[])
 
 		if (toque.px == 0 && toque.py == 0) {
 			printf("\x1b[0;0H");
-			printf("O toque da sua caneta corresponde a letra -> ")
+			printf("O toque da sua caneta corresponde a letra -> ");
 		}
 
 		if (kDown & KEY_SELECT) {
