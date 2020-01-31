@@ -3113,7 +3113,7 @@ Linker script and memory map
  .iplt          0x000000000011e880        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu/3dsx_crt0.o
                 0x000000000011f000                . = ALIGN (0x1000)
 
-.rodata         0x000000000011f000    0x3fb3c
+.rodata         0x000000000011f000    0x3fb44
  *(.rodata)
  .rodata        0x000000000011f000    0x38404 brew.bgr.o
                 0x000000000011f000                brew_bgr
@@ -3127,164 +3127,163 @@ Linker script and memory map
  *(.roda)
  *(.rodata.*)
  .rodata.str1.4
-                0x0000000000157c14      0x10f main.o
- *fill*         0x0000000000157d23        0x1 
+                0x0000000000157c14      0x11b main.o
+ *fill*         0x0000000000157d2f        0x1 
  .rodata.con_write.str1.4
-                0x0000000000157d24       0x52 C:/devkitPro/libctru/lib\libctru.a(console.o)
- *fill*         0x0000000000157d76        0x2 
+                0x0000000000157d30       0x52 C:/devkitPro/libctru/lib\libctru.a(console.o)
+ *fill*         0x0000000000157d82        0x2 
  .rodata.str1.4
-                0x0000000000157d78       0x10 C:/devkitPro/libctru/lib\libctru.a(console.o)
+                0x0000000000157d84       0x10 C:/devkitPro/libctru/lib\libctru.a(console.o)
  .rodata.colorTable
-                0x0000000000157d88       0x30 C:/devkitPro/libctru/lib\libctru.a(console.o)
+                0x0000000000157d94       0x30 C:/devkitPro/libctru/lib\libctru.a(console.o)
  .rodata.dotab_stdout
-                0x0000000000157db8       0x70 C:/devkitPro/libctru/lib\libctru.a(console.o)
+                0x0000000000157dc4       0x70 C:/devkitPro/libctru/lib\libctru.a(console.o)
  .rodata.CSWTCH.62
-                0x0000000000157e28       0x14 C:/devkitPro/libctru/lib\libctru.a(gfx.o)
+                0x0000000000157e34       0x14 C:/devkitPro/libctru/lib\libctru.a(gfx.o)
  .rodata.framebufferInfoSt
-                0x0000000000157e3c        0x8 C:/devkitPro/libctru/lib\libctru.a(gfx.o)
+                0x0000000000157e48        0x8 C:/devkitPro/libctru/lib\libctru.a(gfx.o)
  .rodata.gspInit.str1.4
-                0x0000000000157e44        0x9 C:/devkitPro/libctru/lib\libctru.a(gspgpu.o)
- *fill*         0x0000000000157e4d        0x3 
- .rodata.csndInit.str1.4
-                0x0000000000157e50        0x9 C:/devkitPro/libctru/lib\libctru.a(csnd.o)
+                0x0000000000157e50        0x9 C:/devkitPro/libctru/lib\libctru.a(gspgpu.o)
  *fill*         0x0000000000157e59        0x3 
+ .rodata.csndInit.str1.4
+                0x0000000000157e5c        0x9 C:/devkitPro/libctru/lib\libctru.a(csnd.o)
+ *fill*         0x0000000000157e65        0x3 
  .rodata.aptSendCommand.str1.4
-                0x0000000000157e5c       0x16 C:/devkitPro/libctru/lib\libctru.a(apt.o)
- *fill*         0x0000000000157e72        0x2 
+                0x0000000000157e68       0x16 C:/devkitPro/libctru/lib\libctru.a(apt.o)
+ *fill*         0x0000000000157e7e        0x2 
  .rodata.hidInit.str1.4
-                0x0000000000157e74       0x15 C:/devkitPro/libctru/lib\libctru.a(hid.o)
- *fill*         0x0000000000157e89        0x3 
+                0x0000000000157e80       0x15 C:/devkitPro/libctru/lib\libctru.a(hid.o)
+ *fill*         0x0000000000157e95        0x3 
  .rodata.srvInit.str1.4
-                0x0000000000157e8c        0x5 C:/devkitPro/libctru/lib\libctru.a(srv.o)
- *fill*         0x0000000000157e91        0x3 
+                0x0000000000157e98        0x5 C:/devkitPro/libctru/lib\libctru.a(srv.o)
+ *fill*         0x0000000000157e9d        0x3 
  .rodata.irrstInit.str1.4
-                0x0000000000157e94        0x7 C:/devkitPro/libctru/lib\libctru.a(irrst.o)
- *fill*         0x0000000000157e9b        0x1 
+                0x0000000000157ea0        0x7 C:/devkitPro/libctru/lib\libctru.a(irrst.o)
+ *fill*         0x0000000000157ea7        0x1 
  .rodata.ptmSysmInit.str1.4
-                0x0000000000157e9c        0x9 C:/devkitPro/libctru/lib\libctru.a(ptmsysm.o)
- *fill*         0x0000000000157ea5        0x3 
+                0x0000000000157ea8        0x9 C:/devkitPro/libctru/lib\libctru.a(ptmsysm.o)
+ *fill*         0x0000000000157eb1        0x3 
  .rodata.str1.4
-                0x0000000000157ea8        0x5 C:/devkitPro/libctru/lib\libctru.a(sdmc_dev.o)
+                0x0000000000157eb4        0x5 C:/devkitPro/libctru/lib\libctru.a(sdmc_dev.o)
                                           0x9 (size before relaxing)
- *fill*         0x0000000000157ead        0x3 
+ *fill*         0x0000000000157eb9        0x3 
  .rodata.sdmcExit.str1.4
-                0x0000000000157eb0        0x6 C:/devkitPro/libctru/lib\libctru.a(sdmc_dev.o)
- *fill*         0x0000000000157eb6        0x2 
+                0x0000000000157ebc        0x6 C:/devkitPro/libctru/lib\libctru.a(sdmc_dev.o)
+ *fill*         0x0000000000157ec2        0x2 
  .rodata.error_table
-                0x0000000000157eb8       0x30 C:/devkitPro/libctru/lib\libctru.a(sdmc_dev.o)
+                0x0000000000157ec4       0x30 C:/devkitPro/libctru/lib\libctru.a(sdmc_dev.o)
  .rodata.fsInit.str1.4
-                0x0000000000157ee8        0x8 C:/devkitPro/libctru/lib\libctru.a(fs.o)
+                0x0000000000157ef4        0x8 C:/devkitPro/libctru/lib\libctru.a(fs.o)
  .rodata._global_impure_ptr
-                0x0000000000157ef0        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-impure.o)
-                0x0000000000157ef0                _global_impure_ptr
+                0x0000000000157efc        0x4 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-impure.o)
+                0x0000000000157efc                _global_impure_ptr
  .rodata._puts_r.str1.4
-                0x0000000000157ef4        0x2 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-puts.o)
+                0x0000000000157f00        0x2 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-puts.o)
  .rodata.__ssvfscanf_r.str1.1
-                0x0000000000157ef6        0x5 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfscanf.o)
+                0x0000000000157f02        0x5 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfscanf.o)
                                           0x6 (size before relaxing)
- *fill*         0x0000000000157efb        0x1 
+ *fill*         0x0000000000157f07        0x1 
  .rodata.basefix.8820
-                0x0000000000157efc       0x22 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfscanf.o)
+                0x0000000000157f08       0x22 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfscanf.o)
  .rodata._vfprintf_r.str1.1
-                0x0000000000157f1e       0x3b c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-vfprintf.o)
- *fill*         0x0000000000157f59        0x3 
+                0x0000000000157f2a       0x3b c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-vfprintf.o)
+ *fill*         0x0000000000157f65        0x3 
  .rodata.blanks.8791
-                0x0000000000157f5c       0x10 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-vfprintf.o)
+                0x0000000000157f68       0x10 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-vfprintf.o)
  .rodata.zeroes.8792
-                0x0000000000157f6c       0x10 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-vfprintf.o)
+                0x0000000000157f78       0x10 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-vfprintf.o)
  .rodata._ctype_
-                0x0000000000157f7c      0x101 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-ctype_.o)
-                0x0000000000157f7c                _ctype_
- *fill*         0x000000000015807d        0x3 
+                0x0000000000157f88      0x101 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-ctype_.o)
+                0x0000000000157f88                _ctype_
+ *fill*         0x0000000000158089        0x3 
  .rodata._dtoa_r.str1.4
-                0x0000000000158080       0x12 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-dtoa.o)
- *fill*         0x0000000000158092        0x2 
+                0x000000000015808c       0x12 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-dtoa.o)
+ *fill*         0x000000000015809e        0x2 
  .rodata.str1.4
-                0x0000000000158094       0x48 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-locale.o)
+                0x00000000001580a0       0x48 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-locale.o)
                                          0x4c (size before relaxing)
  .rodata._mbrtowc_r.str1.4
-                0x00000000001580dc        0x1 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-mbrtowc.o)
- *fill*         0x00000000001580dc        0x4 
+                0x00000000001580e8        0x1 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-mbrtowc.o)
  .rodata.__mprec_bigtens
-                0x00000000001580e0       0x28 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-mprec.o)
-                0x00000000001580e0                __mprec_bigtens
+                0x00000000001580e8       0x28 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-mprec.o)
+                0x00000000001580e8                __mprec_bigtens
  .rodata.__mprec_tens
-                0x0000000000158108       0xc8 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-mprec.o)
-                0x0000000000158108                __mprec_tens
+                0x0000000000158110       0xc8 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-mprec.o)
+                0x0000000000158110                __mprec_tens
  .rodata.p05.7510
-                0x00000000001581d0        0xc c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-mprec.o)
+                0x00000000001581d8        0xc c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-mprec.o)
  .rodata._strtod_l.str1.4
-                0x00000000001581dc        0xf c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-strtod.o)
+                0x00000000001581e4        0xf c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-strtod.o)
                                          0x11 (size before relaxing)
- *fill*         0x00000000001581eb        0x1 
+ *fill*         0x00000000001581f3        0x1 
  .rodata.fpi.7590
-                0x00000000001581ec       0x14 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-strtod.o)
+                0x00000000001581f4       0x14 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-strtod.o)
  .rodata.fpinan.7626
-                0x0000000000158200       0x14 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-strtod.o)
- *fill*         0x0000000000158214        0x4 
+                0x0000000000158208       0x14 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-strtod.o)
+ *fill*         0x000000000015821c        0x4 
  .rodata.tinytens
-                0x0000000000158218       0x28 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-strtod.o)
+                0x0000000000158220       0x28 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-strtod.o)
  .rodata.__action_table
-                0x0000000000158240       0x6c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfiprintf.o)
-                0x0000000000158240                __action_table
+                0x0000000000158248       0x6c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfiprintf.o)
+                0x0000000000158248                __action_table
  .rodata.__chclass
-                0x00000000001582ac      0x100 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfiprintf.o)
-                0x00000000001582ac                __chclass
+                0x00000000001582b4      0x100 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfiprintf.o)
+                0x00000000001582b4                __chclass
  .rodata.__state_table
-                0x00000000001583ac       0x6c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfiprintf.o)
-                0x00000000001583ac                __state_table
+                0x00000000001583b4       0x6c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfiprintf.o)
+                0x00000000001583b4                __state_table
  .rodata._svfprintf_r.str1.1
-                0x0000000000158418       0x3b c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfprintf.o)
+                0x0000000000158420       0x3b c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfprintf.o)
  .rodata.blanks.8776
-                0x0000000000158418       0x10 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfprintf.o)
+                0x0000000000158420       0x10 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfprintf.o)
  .rodata.zeroes.8777
-                0x0000000000158428       0x10 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfprintf.o)
+                0x0000000000158430       0x10 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-svfprintf.o)
  .rodata.__hexdig
-                0x0000000000158438      0x100 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-gdtoa-gethex.o)
-                0x0000000000158438                __hexdig
+                0x0000000000158440      0x100 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-gdtoa-gethex.o)
+                0x0000000000158440                __hexdig
  .rodata._jp2uc_l.str1.4
-                0x0000000000158538       0x12 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
- *fill*         0x000000000015854a        0x2 
- .rodata.a1     0x000000000015854c       0xbc c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
- .rodata.a2     0x0000000000158608       0xbc c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
- .rodata.a3     0x00000000001586c4       0x5b c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
- *fill*         0x000000000015871f        0x1 
- .rodata.a6     0x0000000000158720       0x70 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
- .rodata.a7     0x0000000000158790       0xa2 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
- *fill*         0x0000000000158832        0x2 
- .rodata.a8     0x0000000000158834       0x40 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
- .rodata.b02cf  0x0000000000158874     0x172a c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
- *fill*         0x0000000000159f9e        0x2 
- .rodata.d02f4  0x0000000000159fa0     0x1a7c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
+                0x0000000000158540       0x12 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
+ *fill*         0x0000000000158552        0x2 
+ .rodata.a1     0x0000000000158554       0xbc c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
+ .rodata.a2     0x0000000000158610       0xbc c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
+ .rodata.a3     0x00000000001586cc       0x5b c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
+ *fill*         0x0000000000158727        0x1 
+ .rodata.a6     0x0000000000158728       0x70 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
+ .rodata.a7     0x0000000000158798       0xa2 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
+ *fill*         0x000000000015883a        0x2 
+ .rodata.a8     0x000000000015883c       0x40 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
+ .rodata.b02cf  0x000000000015887c     0x172a c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
+ *fill*         0x0000000000159fa6        0x2 
+ .rodata.d02f4  0x0000000000159fa8     0x1a7c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-jp2uc.o)
  .rodata.str1.4
-                0x000000000015ba1c        0x5 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-lnumeric.o)
+                0x000000000015ba24        0x5 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-lnumeric.o)
  .rodata._C_numeric_locale
-                0x000000000015ba1c        0xc c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-lnumeric.o)
-                0x000000000015ba1c                _C_numeric_locale
+                0x000000000015ba24        0xc c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-lnumeric.o)
+                0x000000000015ba24                _C_numeric_locale
  .rodata.categories
-                0x000000000015ba28     0x309c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-categories.o)
+                0x000000000015ba30     0x309c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libg.a(lib_a-categories.o)
  .rodata.AddDevice.str1.4
-                0x000000000015eac4        0x8 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libsysbase.a(iosupport.o)
+                0x000000000015eacc        0x8 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libsysbase.a(iosupport.o)
  .rodata.dotab_stdnull
-                0x000000000015eacc       0x70 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libsysbase.a(iosupport.o)
-                0x000000000015eacc                dotab_stdnull
+                0x000000000015ead4       0x70 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu\libsysbase.a(iosupport.o)
+                0x000000000015ead4                dotab_stdnull
  *all.rodata*(*)
  *(.gnu.linkonce.r*)
-                0x000000000015eb3c                . = ALIGN (0x4)
+                0x000000000015eb44                . = ALIGN (0x4)
 
-.eh_frame       0x000000000015eb3c        0x0
- .eh_frame      0x000000000015eb3c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/armv6k/fpu/crtbegin.o
+.eh_frame       0x000000000015eb44        0x0
+ .eh_frame      0x000000000015eb44        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/armv6k/fpu/crtbegin.o
 
-.rel.dyn        0x000000000015eb3c        0x0
- .rel.iplt      0x000000000015eb3c        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu/3dsx_crt0.o
+.rel.dyn        0x000000000015eb44        0x0
+ .rel.iplt      0x000000000015eb44        0x0 c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/9.1.0/../../../../arm-none-eabi/lib/armv6k/fpu/3dsx_crt0.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000015eb3c                __exidx_start = .
+                0x000000000015eb44                __exidx_start = .
 
 ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000000000015eb3c                __exidx_end = .
+                0x000000000015eb44                __exidx_end = .
                 0x000000000015f000                . = ALIGN (0x1000)
 
 .data           0x000000000015f000     0x23b8

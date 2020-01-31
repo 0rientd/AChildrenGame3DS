@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
 			printf("\x1b[0;0H");
 			printf("O toque da sua caneta corresponde a letra -> A\n");
 
-			FILE *som_porco = fopen("porco.bin", "rb");
+			FILE *som_porco = fopen("audio/lion.bin", "rb");
 			fseek(som_porco, 0, SEEK_END);
 			off_t tamanho_da_musica = ftell(som_porco);
 			fseek(som_porco, 0, SEEK_SET);
@@ -61,7 +61,7 @@ int main(int argc, char* argv[]) {
 			printf("\x1b[0;0H");
 			printf("O toque da sua caneta corresponde a letra -> B\n");
 			
-			FILE *som_gato = fopen("cat.bin", "rb");
+			FILE *som_gato = fopen("audio/cat.bin", "rb");
 			fseek(som_gato, 0, SEEK_END);
 			off_t tamanho_som_gato = ftell(som_gato);
 			fseek(som_gato, 0, SEEK_SET);
