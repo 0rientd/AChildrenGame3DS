@@ -32,6 +32,9 @@ SOURCES		:=	source
 DATA		:=
 INCLUDES	:=	include
 GRAPHICS	:=	gfx
+APP_TITLE   := A Children Game | HO
+APP_AUTHOR  := HackerOrientado
+ICON		:= logo.png
 
 #---------------------------------------------------------------------------------
 # options for code generation

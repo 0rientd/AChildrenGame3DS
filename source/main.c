@@ -50,7 +50,7 @@ int main(int argc, char* argv[]) {
 			off_t bytesRead = fread(buffer_para_som, 1, tamanho_da_musica, som_porco);
 			fclose(som_porco);
 
-			csndPlaySound(8, SOUND_FORMAT_16BIT | SOUND_ONE_SHOT, 32000, 1.0, 0, buffer_para_som, buffer_para_som, tamanho_da_musica);
+			csndPlaySound(8, SOUND_FORMAT_16BIT | SOUND_ONE_SHOT, 38000, 1.0, 0.0, buffer_para_som, buffer_para_som, tamanho_da_musica);
 		}
 
 		if (toque.px > 160 && toque.py < 120) {
