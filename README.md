@@ -35,7 +35,7 @@ make
 <h2>How to use the game on your 3DS</h2>
 
 - Create a folder named "*A Children Game*" into "*3ds*" folder of your SD Card *(e.g. 3dsSDCard/3ds/A Children Game)*
-- Copy the *AChildrenGame3DS.3dsx*, *AChildrenGame3DS.elf*, *AChildrenGame3DS.smdh* and the all .bin files to "*A Children Game*" folder
+- Copy the *AChildrenGame3DS.3dsx*, *AChildrenGame3DS.elf*, *AChildrenGame3DS.smdh* and the folder "*audio"* to "*A Children Game*" folderon your 3DS SD Card.
 - Open the Homebrew Laucher and play the game
 
 ----------------
