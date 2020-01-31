@@ -6,6 +6,7 @@
 #include "brew_bgr.h"
 
 u8* buffer_para_som;
+u8* buffer_para_som_gato;
 u32 size;
 
 int main(int argc, char* argv[]) {
@@ -50,12 +51,27 @@ int main(int argc, char* argv[]) {
 			off_t bytesRead = fread(buffer_para_som, 1, tamanho_da_musica, som_porco);
 			fclose(som_porco);
 
-			csndPlaySound(8, SOUND_FORMAT_16BIT | SOUND_ONE_SHOT, 38000, 1.0, 0.0, buffer_para_som, buffer_para_som, tamanho_da_musica);
+			csndPlaySound(8, SOUND_FORMAT_16BIT | SOUND_ONE_SHOT, 48000, 1.0, 0.0, buffer_para_som, buffer_para_som, tamanho_da_musica);
+
+			linearFree(buffer_para_som);
+		
 		}
 
 		if (toque.px > 160 && toque.py < 120) {
 			printf("\x1b[0;0H");
 			printf("O toque da sua caneta corresponde a letra -> B\n");
+			
+			FILE *som_gato = fopen("cat.bin", "rb");
+			fseek(som_gato, 0, SEEK_END);
+			off_t tamanho_som_gato = ftell(som_gato);
+			fseek(som_gato, 0, SEEK_SET);
+			buffer_para_som_gato = linearAlloc(tamanho_som_gato);
+			off_t bytesRead = fread(buffer_para_som_gato, 1, tamanho_som_gato, som_gato);
+			fclose(som_gato);
+
+			csndPlaySound(8, SOUND_FORMAT_16BIT | SOUND_ONE_SHOT, 48000, 1.0, 0.0, buffer_para_som_gato, buffer_para_som_gato, tamanho_som_gato);
+
+			linearFree(buffer_para_som_gato);
 		}
 
 		if (toque.px < 160 && toque.py > 120) {
