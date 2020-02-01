@@ -12,9 +12,9 @@ This project is for study purpose.
 - [X] Add a custom logo
 - [X] Split the screen in 4 parts
 - [X] Play sound in each split screen
-- [ ] Add image in each split screen
-- [ ] Add sound in each split screen
-- [ ] Render a nice wallpaper to the top screen :)
+- [X] Add image in each split screen
+- [X] Add sound in each split screen
+- [X] Render a nice wallpaper to the top screen :)
 - [ ] Maybe a backuground music
 - [ ] Maybe an another thing =P
 

@@ -80,7 +80,8 @@ main.o: \
  C:/devkitPro/libctru/include/3ds/romfs.h \
  C:/devkitPro/libctru/include/3ds/font.h \
  C:/devkitPro/libctru/include/3ds/gdbhio_dev.h \
- C:/Users/carlos.henrique/Documents/Projetos/3ds/AChildrenGame3DS/build/brew_bgr.h
+ C:/Users/carlos.henrique/Documents/Projetos/3ds/AChildrenGame3DS/build/bottom_screen_bgr.h \
+ C:/Users/carlos.henrique/Documents/Projetos/3ds/AChildrenGame3DS/build/top_screen_bgr.h
 
 C:/devkitPro/libctru/include/3ds.h:
 
@@ -242,4 +243,6 @@ C:/devkitPro/libctru/include/3ds/font.h:
 
 C:/devkitPro/libctru/include/3ds/gdbhio_dev.h:
 
-C:/Users/carlos.henrique/Documents/Projetos/3ds/AChildrenGame3DS/build/brew_bgr.h:
+C:/Users/carlos.henrique/Documents/Projetos/3ds/AChildrenGame3DS/build/bottom_screen_bgr.h:
+
+C:/Users/carlos.henrique/Documents/Projetos/3ds/AChildrenGame3DS/build/top_screen_bgr.h:
