@@ -22,10 +22,11 @@ This project is for study purpose.
 
 <h2>How to compile</h2>
 
-To compile this code you will need [ImageMagick](https://imagemagick.org/) to convert the content in gfx folder into a image where 3DS can use into .3dsx file.
+To compile this project you will need do these simple steps:
 
+- Install [ImageMagick](https://imagemagick.org/) (It's needed to have this when you will use the "*make*" command to convert the images in the gfx folder)
 - Install [DevKitPro](https://github.com/devkitPro/installer/releases) 
-- Make a simple "make" in the folder where the make file is in
+- Do a simple "make" in the folder where is the make file
 ```
 make
 ```
@@ -35,8 +36,8 @@ make
 <h2>How to use the game on your 3DS</h2>
 
 - Create a folder named "*A Children Game*" into "*3ds*" folder of your SD Card *(e.g. 3dsSDCard/3ds/A Children Game)*
-- Copy the *AChildrenGame3DS.3dsx*, *AChildrenGame3DS.elf*, *AChildrenGame3DS.smdh* and the folder "*audio"* to "*A Children Game*" folderon your 3DS SD Card.
-- Open the Homebrew Laucher and play the game
+- Copy the *AChildrenGame3DS.3dsx*, *AChildrenGame3DS.elf*, *AChildrenGame3DS.smdh* and the folder "*audio"* to "*A Children Game*" folder in your 3DS SD Card.
+- Open the Homebrew Laucher and enjoy ;D
 
 ----------------
 
